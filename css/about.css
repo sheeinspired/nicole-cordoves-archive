@@ -1,0 +1,16 @@
+.about-section { background: var(--paper); }
+.about-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 9%; align-items: center; }
+.about-art {
+  min-height: 470px; position: relative; display: grid; place-items: center; overflow: hidden;
+  background: linear-gradient(150deg, #ead8d4, #c18b98 55%, #5a293b);
+}
+.about-art::before, .about-art::after { content: ""; position: absolute; border: 1px solid rgba(255,255,255,.42); border-radius: 50%; width: 78%; height: 88%; transform: rotate(18deg); }
+.about-art::after { width: 60%; height: 70%; transform: rotate(-18deg); }
+.about-monogram { color: rgba(255,255,255,.27); font: 500 22rem var(--serif); line-height: 1; }
+.about-art-caption { position: absolute; bottom: 22px; left: 22px; color: white; font-size: .62rem; font-weight: 700; letter-spacing: .2em; }
+.about-copy h2 { font-size: clamp(2.5rem,4.6vw,4.4rem); }
+.about-copy > p:not(.section-label) { color: var(--muted); line-height: 1.85; }
+.about-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 15px 24px; margin-top: 28px; }
+.about-fact { padding-top: 13px; border-top: 1px solid var(--line); }
+.about-fact b { display: block; color: var(--wine); font-size: .78rem; }
+.about-fact span { color: var(--muted); font-size: .78rem; }

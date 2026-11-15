@@ -1,0 +1,14 @@
+.journey-section { background: var(--wine); color: var(--white); }
+.journey-section .section-heading h2 { color: var(--white); }
+.journey-section .section-heading h2 em { color: var(--blush); }
+.journey-section .section-copy { color: #d5c2c8; }
+.timeline { position: relative; margin-top: 54px; }
+.timeline::before { content: ""; position: absolute; top: 0; bottom: 0; left: 112px; width: 1px; background: rgba(198,164,106,.42); }
+.timeline-item { position: relative; display: grid; grid-template-columns: 88px 1fr; gap: 48px; padding-bottom: 42px; }
+.timeline-item::before { content: ""; position: absolute; left: 107px; top: 8px; width: 11px; height: 11px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 5px var(--wine); }
+.timeline-year { color: var(--gold); font: 500 1.55rem var(--serif); }
+.timeline-card { padding: 0 0 26px; border-bottom: 1px solid rgba(255,255,255,.13); }
+.timeline-card h3 { margin: 0 0 8px; color: white; font: 500 1.5rem var(--serif); }
+.timeline-card p { max-width: 780px; margin: 0; color: #d5c2c8; font-size: .9rem; }
+.timeline-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+.timeline-tag { border: 1px solid rgba(198,164,106,.42); padding: 4px 9px; color: #e4cfae; font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; }

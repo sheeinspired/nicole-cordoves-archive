@@ -1,0 +1,11 @@
+.social-section { background: var(--wine); color: white; }
+.social-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 8%; align-items: center; }
+.social-copy .section-label { color: var(--gold); }
+.social-copy h2 { color: white; }
+.social-copy h2 em { color: var(--blush); }
+.social-copy > p:last-child { max-width: 420px; color: #d5c2c8; }
+.social-links { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.social-links a { display: flex; justify-content: space-between; padding: 16px 18px; border: 1px solid rgba(231,201,201,.25); color: #f0e3e6; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; transition: .2s ease; }
+.social-links a:hover { background: var(--gold); border-color: var(--gold); color: var(--wine); }
+.social-links a span { color: var(--gold); }
+.social-links a:hover span { color: var(--wine); }

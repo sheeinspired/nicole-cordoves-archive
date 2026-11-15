@@ -1,0 +1,56 @@
+[
+  {
+    "number": "01",
+    "category": "Pageantry",
+    "artLabel": "The Crown",
+    "title": "From Miss Chinatown to the global stage",
+    "description": "Miss Chinatown 2014, Binibining Pilipinas 2016, Miss Grand International 2016, and her continued relationship with pageantry as host and director.",
+    "link": "#journey",
+    "linkLabel": "Explore milestones"
+  },
+  {
+    "number": "02",
+    "category": "Hosting",
+    "artLabel": "The Mic",
+    "title": "Owning the stage",
+    "description": "Binibining Pilipinas, Miss Grand International, Miss Iloilo, and other public hosting appearances.",
+    "link": "#articles",
+    "linkLabel": "Browse appearances"
+  },
+  {
+    "number": "03",
+    "category": "Television",
+    "artLabel": "On Screen",
+    "title": "Television and entertainment",
+    "description": "It's Showtime's Miss Q&A, Drag Den Philippines, One Good Day, Replacing Chef Chico, and other screen credits.",
+    "link": "#articles",
+    "linkLabel": "Browse coverage"
+  },
+  {
+    "number": "04",
+    "category": "Interviews",
+    "artLabel": "In Conversation",
+    "title": "Stories beyond the headlines",
+    "description": "Long-form conversations, podcasts, features, and interviews that offer a closer look at her thoughts and experiences.",
+    "link": "#articles",
+    "linkLabel": "Read articles"
+  },
+  {
+    "number": "05",
+    "category": "Projects",
+    "artLabel": "The Projects",
+    "title": "Creative work and collaborations",
+    "description": "Acting, campaigns, brand partnerships, cultural initiatives, and professional collaborations documented in public sources.",
+    "link": "#articles",
+    "linkLabel": "Explore coverage"
+  },
+  {
+    "number": "06",
+    "category": "Public life",
+    "artLabel": "The Community",
+    "title": "Events and appearances",
+    "description": "Public events, special guestings, pageant engagements, and appearances across media platforms.",
+    "link": "#photos",
+    "linkLabel": "View gallery"
+  }
+]

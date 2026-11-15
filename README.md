@@ -1,29 +1,74 @@
 # Nicole Cordoves — The Career Archive
 
-A responsive, one-page HTML/CSS/JavaScript website inspired by the LiaBear and Miho Cosplay projects.
+A modular, fan-made archive website based on the structure and browsing experience of the Miho Cosplay project.
 
-## Run locally
-1. Extract the ZIP file.
-2. Open `index.html` in a browser, or open the folder in VS Code and use Live Server.
-3. Edit the text, links, colors, and media entries directly in `index.html`.
+## Folder structure
 
-## Publish free with GitHub Pages
-1. Create a public GitHub repository (for example, `nicole-cordoves-archive`).
-2. Upload `index.html` (and this README if desired) to the repository root.
-3. Open **Settings → Pages**.
-4. Under Build and deployment, choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
-
-## Add photographs
-The current design uses CSS photo placeholders so it does not hotlink or republish third-party photographs without permission. Replace the `.photo-placeholder` and `.about-art` blocks with images you have permission to use. A simple option is to create an `images` folder and use:
-
-```html
-<img src="images/nicole-hero.jpg" alt="Nicole Cordoves" />
+```text
+nicole-cordovs-archive/
+├── index.html
+├── css/
+│   ├── variables.css
+│   ├── style.css
+│   ├── intro.css
+│   ├── navbar.css
+│   ├── hero.css
+│   ├── marquee.css
+│   ├── about.css
+│   ├── timeline.css
+│   ├── career.css
+│   ├── articles.css
+│   ├── gallery.css
+│   ├── social.css
+│   ├── contact.css
+│   └── responsive.css
+├── data/
+│   ├── journey.json
+│   ├── career.json
+│   ├── articles.json
+│   └── photos.json
+├── js/
+│   ├── main.js
+│   ├── journey.js
+│   ├── career.js
+│   ├── articles.js
+│   └── gallery.js
+└── images/
+    ├── hero/
+    └── photos/
 ```
 
-Add your own image styling in the CSS. Use official/publicity images only where reuse is permitted, or images you have permission to publish.
+## Preview on your computer
 
-## Current archive scope
-The first edition includes a timeline and curated article/video links from Miss Chinatown, pageantry, hosting, television, interviews, Drag Den, Mr. and Ms. Chinatown Global, and 2026 public appearances. It is not an exhaustive bibliography. Verify each source and add further public material as it is found.
+Because the site loads JSON files with `fetch()`, don't open `index.html` by double-clicking it.
+
+1. Open this folder in Visual Studio Code.
+2. Install the free **Live Server** extension if you don't already have it.
+3. Right-click `index.html`.
+4. Choose **Open with Live Server**.
+
+You can also run `python -m http.server 8000` in this folder and open `http://localhost:8000`.
+
+## Add Nicole photos
+
+The first version uses designed placeholders instead of borrowing photos from another website.
+
+1. Put image files in `images/photos/`.
+2. Open `data/photos.json`.
+3. Change each `image` value to the exact filename you added.
+4. Use photos you own or have permission to publish.
+
+To use a hero photo, add your chosen image and update the `.hero-image-frame` styling in `css/hero.css`.
+
+## Edit the website content
+
+- `data/journey.json` — timeline milestones
+- `data/career.json` — career category cards
+- `data/articles.json` — articles, interviews, publications and links
+- `data/photos.json` — gallery items
+- `css/` — visual design, with separate files for each section
+- `js/` — navigation and interactive features
 
 ## Important
-This is an independent fan-made archive, not an official website and not affiliated with Nicole Cordoves, her management, or any publication listed. The website does not use analytics or trackers.
+
+This is an independent fan-made archive. It is not affiliated with or endorsed by Nicole Cordoves or her representatives. The article links and career information were carried over from the supplied draft HTML and have not been independently re-verified in this build. Check dates, titles, credits and links before publishing.

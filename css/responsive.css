@@ -1,0 +1,53 @@
+@media (max-width: 1000px) {
+  .nav-links { gap: 15px; }
+  .nav-link { font-size: .69rem; }
+  .hero-grid { gap: 4%; }
+  .hero-visual { min-height: 450px; }
+  .hero-image-frame { width: min(100%,390px); }
+}
+@media (max-width: 850px) {
+  .menu-toggle { display: block; }
+  .nav-links {
+    display: none; position: absolute; top: 76px; left: -24px; right: -24px;
+    padding: 18px 24px 24px; background: rgba(255,250,245,.98);
+    border-bottom: 1px solid var(--line); box-shadow: 0 18px 28px rgba(40,12,25,.08);
+    flex-direction: column; align-items: flex-start; gap: 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-link { width: 100%; padding: 12px 0; font-size: .78rem; }
+  .nav-link::after { bottom: 5px; transform-origin: left; }
+  .hero-grid, .about-layout, .social-layout, .contact-layout { grid-template-columns: 1fr; }
+  .hero { padding-top: 70px; }
+  .hero-visual { min-height: 470px; }
+  .hero-note { left: 4%; }
+  .about-art { min-height: 390px; }
+  .career-grid { grid-template-columns: repeat(2,1fr); }
+  .photo-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 620px) {
+  .container { width: min(100% - 30px, 1180px); }
+  .section { padding: 76px 0; }
+  .hero { min-height: unset; padding: 68px 0 75px; }
+  .hero-title { font-size: 4.3rem; }
+  .hero-visual { min-height: 390px; }
+  .hero-image-frame { width: 84%; }
+  .hero-note { left: 0; bottom: 0; }
+  .hero-stats { gap: 17px; }
+  .hero-stat span { font-size: .58rem; }
+  .about-art { min-height: 330px; }
+  .about-monogram { font-size: 16rem; }
+  .about-facts, .career-grid, .articles-grid, .photo-grid, .social-links { grid-template-columns: 1fr; }
+  .timeline::before { left: 72px; }
+  .timeline-item { grid-template-columns: 55px 1fr; gap: 35px; }
+  .timeline-item::before { left: 67px; }
+  .timeline-year { font-size: 1.2rem; }
+  .article-card { grid-template-columns: 66px 1fr; padding: 16px; gap: 13px; }
+  .article-date { font-size: 1rem; }
+  .photo-card, .photo-card img { min-height: 270px; }
+  .section-heading h2, .about-copy h2, .social-copy h2, .contact-layout h2 { font-size: 2.65rem; }
+  .footer-inner { align-items: flex-start; flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

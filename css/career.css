@@ -1,0 +1,15 @@
+.career-section { background: var(--cream); }
+.career-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.career-card { overflow: hidden; background: var(--white); border: 1px solid var(--line); box-shadow: 0 8px 35px rgba(50,20,30,.04); transition: .25s ease; }
+.career-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.career-card-art { height: 175px; display: grid; place-items: center; position: relative; overflow: hidden; background: linear-gradient(135deg,#5b2b3e,#bd8995); color: #f7e8e6; font: 500 2.3rem var(--serif); }
+.career-card-art::after { content: "NICOLE CORDOVES"; position: absolute; bottom: 13px; left: 16px; font: 700 .56rem var(--sans); letter-spacing: .18em; }
+.career-card-body { padding: 22px; }
+.career-card-body .card-number { color: var(--rose); font-size: .65rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.career-card-body h3 { margin: 8px 0; color: var(--wine); font: 500 1.4rem/1.2 var(--serif); }
+.career-card-body p { margin: 0; color: var(--muted); font-size: .84rem; }
+.career-card-link { display: inline-block; margin-top: 17px; color: #8b4c60; font-size: .67rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; border-bottom: 1px solid #d8b9c1; padding-bottom: 4px; }
+.quote-band { padding: 82px 0; text-align: center; background: linear-gradient(115deg,#ead8d4,#f7eee7); }
+.quote-mark { display: block; color: var(--rose); font: 5rem/.7 var(--serif); }
+.quote-band blockquote { max-width: 870px; margin: 15px auto 0; color: var(--wine); font: italic 500 clamp(1.7rem,4vw,3.1rem)/1.25 var(--serif); }
+.quote-band p { margin: 20px 0 0; color: var(--rose); font-size: .63rem; letter-spacing: .17em; text-transform: uppercase; }

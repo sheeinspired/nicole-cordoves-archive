@@ -1,0 +1,6 @@
+.contact-section { background: var(--cream); }
+.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: center; }
+.contact-layout h2 { margin-bottom: 0; }
+.contact-copy > p { color: var(--muted); line-height: 1.8; }
+.contact-copy .button { margin: 8px 0 12px; }
+.contact-small { font-size: .7rem; }

@@ -1,0 +1,19 @@
+:root {
+  --wine: #260d19;
+  --wine-soft: #401626;
+  --wine-light: #5c2b3d;
+  --rose: #a96c7b;
+  --blush: #e7c9c9;
+  --gold: #c6a46a;
+  --cream: #f6f0e9;
+  --paper: #fffaf5;
+  --paper-pink: #f2e5e2;
+  --ink: #2b2023;
+  --muted: #7d6d70;
+  --line: rgba(67, 35, 44, .15);
+  --white: #fff;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
+  --shadow: 0 22px 70px rgba(40, 12, 25, .13);
+  --radius: 22px;
+}
