@@ -6,11 +6,7 @@
     linear-gradient(115deg, #210b16 0%, #381522 54%, #1c0b13 100%);
   color: var(--white);
 }
-.hero::before {
-  content: "BNC"; position: absolute; right: 2%; top: 3%;
-  color: rgba(255,255,255,.035); font: 600 clamp(18rem,38vw,34rem)/1 var(--serif);
-  pointer-events: none;
-}
+
 .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 7%; align-items: center; position: relative; z-index: 1; }
 .hero-copy .eyebrow { color: var(--gold); }
 .hero-title { margin: 20px 0; font: 500 clamp(4.2rem,8vw,7.5rem)/.88 var(--serif); letter-spacing: -.07em; }
