@@ -7,13 +7,13 @@
   background: var(--rose);
   color: var(--white);
   padding: 16px 0;
-  position: relative;
 }
 
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marqueeScroll 55s linear infinite;
+  animation: marqueeScroll 70s linear infinite;
+  -webkit-animation: marqueeScroll 70s linear infinite;
   will-change: transform;
 }
 
@@ -36,21 +36,32 @@
   color: var(--blush);
 }
 
-/* Seamless infinite scrolling */
+/* Endless scrolling */
 @keyframes marqueeScroll {
   from {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
 
   to {
-    transform: translate3d(-50%, 0, 0);
+    transform: translateX(-50%);
   }
 }
 
-/* Slower movement on mobile */
-@media (max-width: 620px) {
+@-webkit-keyframes marqueeScroll {
+  from {
+    -webkit-transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+/* MOBILE: EXTRA SLOW */
+@media screen and (max-width: 768px) {
   .marquee-track {
-    animation-duration: 85s;
+    animation-duration: 140s !important;
+    -webkit-animation-duration: 140s !important;
   }
 
   .marquee-content {
@@ -63,5 +74,3 @@
     letter-spacing: .14em;
   }
 }
-
-
