@@ -1,6 +1,72 @@
-.marquee { width: 100%; overflow: hidden; background: var(--rose); color: var(--white); padding: 16px 0; }
-.marquee-track { display: flex; width: max-content; animation: marqueeScroll 28s linear infinite; will-change: transform; }
-.marquee-content { display: flex; flex-shrink: 0; align-items: center; gap: 32px; padding-right: 32px; white-space: nowrap; }
-.marquee-content span { font-size: .78rem; font-weight: 700; letter-spacing: .17em; }
-.marquee-content b { color: var(--blush); }
-@keyframes marqueeScroll { to { transform: translate3d(-50%,0,0); } }
+
+/* INFINITE CAREER MARQUEE */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: var(--rose);
+  color: var(--white);
+  padding: 16px 0;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 55s linear infinite;
+  will-change: transform;
+}
+
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 32px;
+  padding-right: 32px;
+  white-space: nowrap;
+}
+
+.marquee-content span {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .17em;
+}
+
+.marquee-content b {
+  color: var(--blush);
+}
+
+/* Seamless infinite scrolling */
+@keyframes marqueeScroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Slower movement on mobile */
+@media (max-width: 620px) {
+  .marquee-track {
+    animation-duration: 85s;
+  }
+
+  .marquee-content {
+    gap: 26px;
+    padding-right: 26px;
+  }
+
+  .marquee-content span {
+    font-size: .7rem;
+    letter-spacing: .14em;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
