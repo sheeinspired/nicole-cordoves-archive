@@ -130,3 +130,39 @@
   overflow-wrap: break-word;
   word-break: normal;
 }
+
+/* MOBILE FIX: PAGEANT LEADERSHIP TEXT */
+
+@media screen and (max-width: 620px) {
+
+  .about-layout,
+  .about-copy,
+  .about-facts,
+  .about-fact {
+    min-width: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    overflow: visible !important;
+    box-sizing: border-box;
+  }
+
+  .about-facts {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .about-fact span {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    text-overflow: clip !important;
+    line-height: 1.8 !important;
+    font-family: var(--sans) !important;
+    font-size: .78rem !important;
+  }
+}
