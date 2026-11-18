@@ -12,3 +12,33 @@
 .timeline-card p { max-width: 780px; margin: 0; color: #d5c2c8; font-size: .9rem; }
 .timeline-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
 .timeline-tag { border: 1px solid rgba(198,164,106,.42); padding: 4px 9px; color: #e4cfae; font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; }
+
+/* TIMELINE SCROLL ANIMATION */
+
+.timeline-item.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity .7s ease,
+    transform .7s ease !important;
+  will-change: opacity, transform;
+}
+
+.timeline-item.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keep timeline animation working on mobile,
+   including devices with reduced-motion settings. */
+
+@media screen and (max-width: 620px) {
+  .timeline-item.reveal {
+    transition-duration: .7s !important;
+  }
+
+  .timeline-item.reveal.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}

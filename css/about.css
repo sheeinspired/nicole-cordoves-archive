@@ -81,3 +81,32 @@
   color: var(--muted);
   font-size: .78rem;
 }
+
+/* ABOUT FACT DESCRIPTIONS */
+
+.about-facts {
+  min-width: 0;
+}
+
+.about-fact {
+  min-width: 0;
+  width: 100%;
+}
+
+.about-fact-description {
+  display: block !important;
+  position: static !important;
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  margin: 6px 0 0;
+  padding: 0;
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.8;
+  white-space: normal !important;
+  overflow: visible !important;
+  overflow-wrap: anywhere;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
