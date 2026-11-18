@@ -13,7 +13,6 @@ function renderPhotos() {
     <article class="photo-card">
       <div class="photo-placeholder" aria-hidden="true">
         ${String(index + 1).padStart(2, "0")}
-        <small>Add photo in images/photos</small>
       </div>
       <img src="${item.image}" alt="${item.alt}" loading="lazy"
         onerror="this.style.display='none'">
