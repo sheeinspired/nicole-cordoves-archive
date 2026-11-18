@@ -15,10 +15,74 @@
     "filterCategory": "hosting",
     "title": "Taking the Stage",
     "label": "Hosting",
-    "description": "Nicole Cordoves hosting an event",
-    "alt": "Nicole Cordoves hosting an event",
+    "description": "Nicole Cordoves as a host, presenter, and event emcee",
+    "alt": "Nicole Cordoves hosting events",
     "cover": "images/gallery/nicole-02.jpg",
-    "albums": []
+    "albums": [
+      {
+        "id": "xpeng-grand-launch",
+        "title": "XPENG Philippines Grand Launch",
+        "date": "2026",
+        "location": "SM Mall of Asia Arena",
+        "description": "Nicole Cordoves co-hosted the grand launch of XPENG Philippines with Tim Yap.",
+        "cover": "images/gallery/nicole-02.jpg",
+        "photos": []
+      },
+      {
+        "id": "skyro-mooove-launch",
+        "title": "Skyro Mooove! Launch Event",
+        "date": "2026",
+        "location": "SM Mall of Asia Music Hall",
+        "description": "Nicole hosted Skyro's brand launch, featuring brand ambassadors Dennis Trillo and Jennylyn Mercado.",
+        "cover": "images/gallery/nicole-02.jpg",
+        "photos": []
+      },
+      {
+        "id": "binibining-pilipinas",
+        "title": "Binibining Pilipinas",
+        "date": "",
+        "location": "",
+        "description": "Nicole Cordoves hosting engagements for Binibining Pilipinas.",
+        "cover": "images/gallery/nicole-02.jpg",
+        "photos": []
+      },
+      {
+        "id": "miss-iloilo",
+        "title": "Miss Iloilo",
+        "date": "",
+        "location": "",
+        "description": "Nicole Cordoves hosting engagements for Miss Iloilo.",
+        "cover": "images/gallery/nicole-02.jpg",
+        "photos": []
+      },
+      {
+        "id": "prime-video",
+        "title": "Prime Video",
+        "date": "2023, 2026",
+        "location": "Various event venues",
+        "description": "Nicole's Prime Video hosting engagements, including the Ten Little Mistresses Mansion Tour in 2023, co-hosted with Ogie Diaz and Mama Loi at SM Mega Fashion Hall, and the pink-themed Elle launch event in 2026.",
+        "cover": "images/gallery/nicole-02.jpg",
+        "photos": []
+      },
+      {
+        "id": "vivo",
+        "title": "Vivo",
+        "date": "2025, 2026",
+        "location": "Various event venues",
+        "description": "Nicole's Vivo photography masterclass engagements: the X300 Series with Jan Mayo in 2025, the V50 with BJ Pascual at One Ayala in 2025, and the V70 in 2026, where she also served as the on-camera muse.",
+        "cover": "images/gallery/nicole-02.jpg",
+        "photos": []
+      },
+      {
+        "id": "mr-ms-chinatown-global",
+        "title": "Mr. and Ms. Chinatown Global Winners' Night",
+        "date": "2025",
+        "location": "",
+        "description": "Nicole Cordoves co-hosted the Mr. and Ms. Chinatown Global Winners' Night with Janeena Chan.",
+        "cover": "images/gallery/nicole-02.jpg",
+        "photos": []
+      }
+    ]
   },
   {
     "id": "pageantry",
