@@ -29,34 +29,30 @@ async function loadJourney() {
       </article>
     `).join("");
 
-    // Set up a separate scroll observer for timeline entries.
     const timelineItems = container.querySelectorAll(".timeline-item");
 
+    // Fallback for browsers without IntersectionObserver
     if (!("IntersectionObserver" in window)) {
-      timelineItems.forEach((item) => {
-        item.classList.add("show");
-      });
+      timelineItems.forEach((item) => item.classList.add("show"));
       return;
     }
 
-    const timelineObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.08,
-        rootMargin: "0px 0px -30px 0px"
-      }
-    );
+    // Independent observer for timeline animation
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.05,
+      rootMargin: "0px 0px -20px 0px"
+    });
 
     timelineItems.forEach((item, index) => {
-      item.style.transitionDelay = `${Math.min(index * 0.06, 0.3)}s`;
-      timelineObserver.observe(item);
+      item.style.transitionDelay = `${Math.min(index * 0.08, 0.32)}s`;
+      observer.observe(item);
     });
 
   } catch (error) {
