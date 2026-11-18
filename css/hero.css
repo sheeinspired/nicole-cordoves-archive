@@ -23,7 +23,9 @@
 .hero-image-frame {
   width: min(100%, 430px); aspect-ratio: 4 / 5; position: relative; overflow: hidden;
   display: grid; place-items: center; border: 1px solid rgba(198,164,106,.7); padding: 12px;
-  background: linear-gradient(145deg, #734353, #2b101c 65%, #130810);
+  background:
+  linear-gradient(rgba(38, 13, 25, 0.12), rgba(38, 13, 25, 0.25)),
+  url("../images/hero/nicole-hero.jpg") center 25% / cover no-repeat;
   box-shadow: var(--shadow); transform: rotate(1.5deg);
 }
 .hero-image-frame::before, .hero-image-frame::after {
