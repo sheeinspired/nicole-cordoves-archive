@@ -1,4 +1,8 @@
 
+/* ========================================
+   ABOUT SECTION
+======================================== */
+
 .about-section {
   background: var(--paper);
 }
@@ -8,50 +12,57 @@
   grid-template-columns: .85fr 1.15fr;
   gap: 9%;
   align-items: center;
+  min-width: 0;
 }
 
+/* ABOUT PHOTO */
+
 .about-art {
-  min-height: 470px;
   position: relative;
   display: grid;
   place-items: center;
+  min-height: 470px;
   overflow: hidden;
   background: #ead8d4;
 }
 
-/* REMOVE DECORATIVE ORBITS */
+/* Remove decorative orbits */
 .about-art::before,
 .about-art::after {
   content: none !important;
   display: none !important;
 }
 
-/* ABOUT PHOTO */
 .about-photo {
   position: absolute;
   inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 25%;
-  display: block;
 }
 
-/* PHOTO CAPTION */
 .about-art-caption {
   position: absolute;
+  z-index: 2;
   bottom: 22px;
   left: 22px;
-  z-index: 2;
   color: white;
   font-size: .62rem;
   font-weight: 700;
   letter-spacing: .2em;
-  text-shadow: 0 2px 8px rgba(0,0,0,.45);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .45);
+}
+
+/* ABOUT TEXT */
+
+.about-copy {
+  min-width: 0;
 }
 
 .about-copy h2 {
-  font-size: clamp(2.5rem,4.6vw,4.4rem);
+  font-size: clamp(2.5rem, 4.6vw, 4.4rem);
 }
 
 .about-copy > p:not(.section-label) {
@@ -59,59 +70,32 @@
   line-height: 1.85;
 }
 
+/* ABOUT FACTS */
+
 .about-facts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 15px 24px;
+  width: 100%;
+  min-width: 0;
   margin-top: 28px;
 }
 
 .about-fact {
+  min-width: 0;
+  width: 100%;
   padding-top: 13px;
   border-top: 1px solid var(--line);
+  box-sizing: border-box;
 }
 
 .about-fact b {
   display: block;
+  margin-bottom: 5px;
   color: var(--wine);
   font-size: .78rem;
+  line-height: 1.5;
 }
-
-.about-fact span {
-  color: var(--muted);
-  font-size: .78rem;
-}
-
-/* ABOUT FACT DESCRIPTIONS */
-
-.about-facts {
-  min-width: 0;
-}
-
-.about-fact {
-  min-width: 0;
-  width: 100%;
-}
-
-.about-fact-description {
-  display: block !important;
-  position: static !important;
-  width: 100%;
-  max-width: 100%;
-  height: auto !important;
-  margin: 6px 0 0;
-  padding: 0;
-  color: var(--muted);
-  font-size: .78rem;
-  line-height: 1.8;
-  white-space: normal !important;
-  overflow: visible !important;
-  overflow-wrap: anywhere;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* ABOUT FACT TEXT - MATCH THE OTHER FACTS */
 
 .about-fact span {
   display: block;
@@ -119,7 +103,7 @@
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin-top: 5px;
+  margin: 0;
   padding: 0;
   color: var(--muted);
   font-family: var(--sans);
@@ -127,42 +111,65 @@
   font-weight: 400;
   line-height: 1.8;
   white-space: normal;
-  overflow-wrap: break-word;
+  overflow: visible;
+  overflow-wrap: anywhere;
   word-break: normal;
+  box-sizing: border-box;
 }
 
-/* MOBILE FIX: PAGEANT LEADERSHIP TEXT */
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
 
 @media screen and (max-width: 620px) {
 
-  .about-layout,
-  .about-copy,
-  .about-facts,
-  .about-fact {
-    min-width: 0 !important;
+  .about-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
     width: 100%;
-    max-width: 100%;
-    overflow: visible !important;
-    box-sizing: border-box;
+    min-width: 0;
+  }
+
+  .about-art {
+    min-height: 330px;
+    width: 100%;
+  }
+
+  .about-copy {
+    width: 100%;
+    min-width: 0;
   }
 
   .about-facts {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-fact {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding-top: 14px;
+    overflow: visible;
+  }
+
+  .about-fact b {
+    display: block;
+    margin-bottom: 6px;
   }
 
   .about-fact span {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    white-space: normal !important;
-    overflow: visible !important;
-    overflow-wrap: anywhere !important;
-    word-break: normal !important;
-    text-overflow: clip !important;
-    line-height: 1.8 !important;
-    font-family: var(--sans) !important;
-    font-size: .78rem !important;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    font-family: var(--sans);
+    font-size: .78rem;
+    line-height: 1.8;
+    white-space: normal;
+    overflow: visible;
+    overflow-wrap: anywhere;
   }
 }
