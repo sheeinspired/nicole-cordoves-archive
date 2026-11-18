@@ -26,7 +26,42 @@
         "location": "SM Mall of Asia Arena",
         "description": "Nicole Cordoves co-hosted the grand launch of XPENG Philippines with Tim Yap.",
         "cover": "images/gallery/nicole-02.jpg",
-        "photos": []
+        "photos": [{
+      "image": "images/gallery/xpeng/xpeng01.jpg",
+      "alt": "Nicole Cordoves at the XPENG Philippines Grand Launch",
+      "caption": "XPENG Philippines Grand Launch",
+      "credit": ""
+    },
+    {
+      "image": "images/gallery/xpeng/xpeng02.jpg",
+      "alt": "Nicole Cordoves hosting the XPENG Philippines Grand Launch",
+      "caption": "",
+      "credit": ""
+    },
+    {
+      "image": "images/gallery/xpeng/xpeng03.jpg",
+      "alt": "Nicole Cordoves at the XPENG Philippines Grand Launch",
+      "caption": "",
+      "credit": ""
+    },
+    {
+      "image": "images/gallery/xpeng/xpeng04.jpg",
+      "alt": "Nicole Cordoves at the XPENG Philippines Grand Launch",
+      "caption": "",
+      "credit": ""
+    },
+    {
+      "image": "images/gallery/xpeng/xpeng05.jpg",
+      "alt": "Nicole Cordoves at the XPENG Philippines Grand Launch",
+      "caption": "",
+      "credit": ""
+    },
+    {
+      "image": "images/gallery/xpeng/xpeng06.jpg",
+      "alt": "Nicole Cordoves at the XPENG Philippines Grand Launch",
+      "caption": "",
+      "credit": ""
+    }]
       },
       {
         "id": "skyro-mooove-launch",
