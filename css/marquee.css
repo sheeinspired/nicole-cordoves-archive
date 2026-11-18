@@ -11,15 +11,16 @@
 
 .marquee-track {
   display: flex;
+  flex-wrap: nowrap;
   width: max-content;
-  animation: marqueeScroll 70s linear infinite;
-  -webkit-animation: marqueeScroll 70s linear infinite;
+  animation: marqueeScroll 65s linear infinite;
+  -webkit-animation: marqueeScroll 65s linear infinite;
   will-change: transform;
 }
 
 .marquee-content {
   display: flex;
-  flex-shrink: 0;
+  flex: 0 0 auto;
   align-items: center;
   gap: 32px;
   padding-right: 32px;
@@ -36,12 +37,12 @@
   color: var(--blush);
 }
 
-/* Endless scrolling */
+/* SEAMLESS INFINITE LOOP */
+
 @keyframes marqueeScroll {
   from {
     transform: translateX(0);
   }
-
   to {
     transform: translateX(-50%);
   }
@@ -49,19 +50,20 @@
 
 @-webkit-keyframes marqueeScroll {
   from {
-    -webkit-transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 
   to {
-    -webkit-transform: translateX(-50%);
+    -webkit-transform: translate3d(-50%, 0, 0);
   }
 }
 
-/* MOBILE: EXTRA SLOW */
+/* MOBILE */
+
 @media screen and (max-width: 768px) {
   .marquee-track {
-    animation-duration: 140s !important;
-    -webkit-animation-duration: 140s !important;
+    animation-duration: 100s;
+    -webkit-animation-duration: 100s;
   }
 
   .marquee-content {
