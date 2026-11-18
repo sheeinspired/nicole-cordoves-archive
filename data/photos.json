@@ -1,44 +1,52 @@
+
 [
   {
-    "title": "Pageant moments",
-    "label": "Pageantry",
-    "category": "pageantry",
-    "image": "images/photos/nicole-01.jpg",
-    "alt": "Nicole Cordoves at a pageant appearance"
+    "image": "images/gallery/nicole-01.jpg",
+    "alt": "Nicole Cordoves at a public event",
+    "title": "On the Spotlight",
+    "label": "Public Appearance",
+    "category": "events"
   },
   {
-    "title": "On the hosting stage",
+    "image": "images/gallery/nicole-02.jpg",
+    "alt": "Nicole Cordoves hosting an event",
+    "title": "Taking the Stage",
     "label": "Hosting",
-    "category": "hosting",
-    "image": "images/photos/nicole-02.jpg",
-    "alt": "Nicole Cordoves during a hosting appearance"
+    "category": "hosting"
   },
   {
-    "title": "Behind the scenes",
-    "label": "Events",
-    "category": "events",
-    "image": "images/photos/nicole-03.jpg",
-    "alt": "Nicole Cordoves at a public event"
-  },
-  {
-    "title": "Editorial portrait",
-    "label": "Editorial",
-    "category": "editorial",
-    "image": "images/photos/nicole-04.jpg",
-    "alt": "Editorial portrait of Nicole Cordoves"
-  },
-  {
-    "title": "A night to remember",
-    "label": "Events",
-    "category": "events",
-    "image": "images/photos/nicole-05.jpg",
-    "alt": "Nicole Cordoves at an evening event"
-  },
-  {
-    "title": "The international stage",
+    "image": "images/gallery/nicole-03.jpg",
+    "alt": "Nicole Cordoves during a pageant",
+    "title": "The Pageant Years",
     "label": "Pageantry",
-    "category": "pageantry",
-    "image": "images/photos/nicole-06.jpg",
-    "alt": "Nicole Cordoves during an international pageant appearance"
+    "category": "pageantry"
+  },
+  {
+    "image": "images/gallery/nicole-07.jpg",
+    "alt": "Nicole Cordoves in a television appearance",
+    "title": "On Screen",
+    "label": "Television",
+    "category": "television"
+  },
+  {
+    "image": "images/gallery/nicole-05.jpg",
+    "alt": "Nicole Cordoves during an interview",
+    "title": "In Conversation",
+    "label": "Interview",
+    "category": "interviews"
+  },
+  {
+    "image": "images/gallery/nicole-06.jpg",
+    "alt": "Nicole Cordoves at an event",
+    "title": "Beyond the Stage",
+    "label": "Events",
+    "category": "events"
+  },
+    {
+    "image": "images/gallery/nicole-04.jpg",
+    "alt": "Nicole Cordoves at magazine features",
+    "title": "In The Pages",
+    "label": "Editorial",
+    "category": "editorial"
   }
 ]

@@ -1,3 +1,4 @@
+
 let photoEntries = [];
 let activePhotoFilter = "all";
 
@@ -9,13 +10,19 @@ function renderPhotos() {
     activePhotoFilter === "all" || item.category === activePhotoFilter
   );
 
-  grid.innerHTML = filtered.map((item, index) => `
+  if (filtered.length === 0) {
+    grid.innerHTML = `<p class="loading-message">No photos found in this category.</p>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map((item) => `
     <article class="photo-card">
-      <div class="photo-placeholder" aria-hidden="true">
-        ${String(index + 1).padStart(2, "0")}
-      </div>
-      <img src="${item.image}" alt="${item.alt}" loading="lazy"
-        onerror="this.style.display='none'">
+      <img
+        src="${item.image}"
+        alt="${item.alt}"
+        loading="lazy"
+      >
+
       <div class="photo-caption">
         <strong>${item.title}</strong>
         <span>${item.label}</span>
@@ -25,31 +32,47 @@ function renderPhotos() {
 }
 
 async function loadPhotos() {
+  const grid = document.getElementById("photoGrid");
+  if (!grid) return;
+
   try {
     const response = await fetch("data/photos.json");
-    if (!response.ok) throw new Error("Could not load photo data.");
+
+    if (!response.ok) {
+      throw new Error("Could not load photo data.");
+    }
+
     photoEntries = await response.json();
     renderPhotos();
+
   } catch (error) {
-    const grid = document.getElementById("photoGrid");
-    if (grid) grid.innerHTML = `<p class="loading-message">The gallery could not be loaded. Please check data/photos.json.</p>`;
+    grid.innerHTML = `
+      <p class="loading-message">
+        The gallery could not be loaded. Please check data/photos.json.
+      </p>
+    `;
+
     console.error(error);
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const filters = document.getElementById("photoFilters");
+
   if (filters) {
     filters.addEventListener("click", (event) => {
       const button = event.target.closest("[data-filter]");
       if (!button) return;
 
       activePhotoFilter = button.dataset.filter;
+
       filters.querySelectorAll(".photo-filter").forEach((item) => {
         item.classList.toggle("active", item === button);
       });
+
       renderPhotos();
     });
   }
+
   loadPhotos();
 });
