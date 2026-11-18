@@ -14,3 +14,18 @@
 .about-fact { padding-top: 13px; border-top: 1px solid var(--line); }
 .about-fact b { display: block; color: var(--wine); font-size: .78rem; }
 .about-fact span { color: var(--muted); font-size: .78rem; }
+/* REMOVE ALL HERO ORBIT AND CIRCLE DECORATIONS */
+
+.hero-visual .hero-orbit,
+.hero-visual .orbit-one,
+.hero-visual .orbit-two {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.hero-image-frame::before,
+.hero-image-frame::after {
+  content: none !important;
+  display: none !important;
+  border: none !important;
+}
