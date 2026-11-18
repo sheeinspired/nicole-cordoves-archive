@@ -7,6 +7,17 @@
   <meta name="theme-color" content="#260d19">
   <meta name="description" content="An archive documenting Nicole Cordoves' public career, pageantry, hosting, television work, articles and appearances.">
   <title>Nicole Cordoves | The Career Archive</title>
+  <script>
+  if (new URLSearchParams(window.location.search).get("fromArchive") === "1") {
+    document.documentElement.classList.add("returning-from-archive");
+  }
+</script>
+
+<style>
+  html.returning-from-archive #intro {
+    display: none !important;
+  }
+</style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +82,7 @@
       <div class="container hero-grid">
 
         <div class="hero-copy reveal">
-          <p class="eyebrow">Nicole Cordoves Archive</p>
+          <p class="eyebrow">The Nicole Cordoves Archive</p>
           <h1 class="hero-title">Nicole<br><span>Cordoves.</span></h1>
 
           <p class="hero-role">

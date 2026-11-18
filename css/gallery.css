@@ -1,4 +1,8 @@
 
+/* ========================================
+   PHOTO GALLERY
+======================================== */
+
 .photos-section {
   background: #f0e4df;
 }
@@ -18,10 +22,14 @@
 
 .photo-card {
   position: relative;
+  display: block;
+  min-width: 0;
   min-height: 300px;
   overflow: hidden;
   background: #d6b0b5;
   box-shadow: 0 12px 35px rgba(40, 12, 25, .09);
+  color: white;
+  text-decoration: none;
 }
 
 .photo-card img {
@@ -48,21 +56,31 @@
   color: white;
   background: linear-gradient(
     transparent,
-    rgba(26, 8, 17, .82)
+    rgba(26, 8, 17, .88)
   );
 }
 
 .photo-caption strong {
   display: block;
-  font: 500 1.2rem var(--serif);
   margin-bottom: 5px;
+  font: 500 1.2rem var(--serif);
 }
 
 .photo-caption span {
+  display: block;
   color: #e8d0d5;
   font-size: .63rem;
   letter-spacing: .12em;
   text-transform: uppercase;
+}
+
+.photo-caption .photo-description {
+  margin: 9px 0 0;
+  color: rgba(255, 250, 245, .88);
+  font-size: .72rem;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 .photo-card[hidden] {
@@ -81,17 +99,40 @@
   padding: 2px 5px;
 }
 
-/* Tablet */
+/* FILTER BUTTONS */
+
+.photo-filter {
+  padding: 9px 17px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: transparent;
+  color: var(--wine);
+  font-family: var(--sans);
+  font-size: .7rem;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.photo-filter:hover,
+.photo-filter.active {
+  background: var(--wine);
+  border-color: var(--wine);
+  color: white;
+}
+
+/* TABLET */
+
 @media (max-width: 900px) {
   .photo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* Mobile */
+/* MOBILE */
+
 @media (max-width: 600px) {
   .photo-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
 
@@ -109,5 +150,19 @@
 
   .photo-caption span {
     font-size: .55rem;
+  }
+
+  .photo-caption .photo-description {
+    font-size: .63rem;
+    line-height: 1.45;
+  }
+
+  .photo-filters {
+    gap: 7px;
+  }
+
+  .photo-filter {
+    padding: 8px 12px;
+    font-size: .63rem;
   }
 }

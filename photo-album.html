@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#260d19">
+
+  <title>Photo Album | Nicole Cordoves</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/photo-archive.css">
+</head>
+
+<body>
+
+  <header class="archive-header">
+    <div class="container archive-nav">
+      <a href="index.html#photos" class="archive-back">← Back to Photos</a>
+      <a href="index.html" class="archive-logo">NC<span>.</span></a>
+    </div>
+  </header>
+
+  <main class="archive-main">
+
+    <section class="album-intro">
+      <div class="container">
+
+        <a href="#" class="album-category-back" id="categoryBack">
+          ← Back to collection
+        </a>
+
+        <p class="archive-eyebrow" id="albumCategory">PHOTO ARCHIVE</p>
+
+        <h1 id="albumTitle">Loading album...</h1>
+
+        <div class="album-details">
+          <span id="albumDate"></span>
+          <span id="albumLocation"></span>
+        </div>
+
+        <p class="archive-description" id="albumDescription"></p>
+
+        <div class="archive-meta">
+          <span id="photoCount">0 photographs</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="archive-content">
+      <div class="container">
+
+        <div class="archive-section-heading">
+          <p class="section-label">THE PHOTOGRAPHS</p>
+          <h2>Captured <em>moments.</em></h2>
+        </div>
+
+        <div class="album-photo-grid" id="albumPhotoGrid">
+          <p class="loading-message">Loading photographs...</p>
+        </div>
+
+        <p class="archive-empty" id="photoEmpty" hidden>
+          Photographs for this album are coming soon.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="archive-footer">
+    <div class="container">
+      <a href="index.html#photos">← Return to the main gallery</a>
+      <p>Nicole Cordoves — The Career Archive</p>
+    </div>
+  </footer>
+
+  <!-- PHOTO LIGHTBOX -->
+  <div class="photo-lightbox" id="photoLightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image">
+      ×
+    </button>
+
+    <button class="lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">
+      ‹
+    </button>
+
+    <figure>
+      <img src="" alt="" id="lightboxImage">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+
+    <button class="lightbox-next" id="lightboxNext" type="button" aria-label="Next image">
+      ›
+    </button>
+  </div>
+
+  <script src="js/photo-album.js" defer></script>
+
+</body>
+</html>

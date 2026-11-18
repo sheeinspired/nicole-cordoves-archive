@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#260d19">
+
+  <title>Photo Archive | Nicole Cordoves</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/photo-archive.css">
+</head>
+
+<body>
+
+  <header class="archive-header">
+    <div class="container archive-nav">
+      <a href="index.html#photos" class="archive-back">← Back to Photos</a>
+      <a href="index.html" class="archive-logo">NC<span>.</span></a>
+    </div>
+  </header>
+
+  <main class="archive-main">
+
+    <section class="archive-intro">
+      <div class="container">
+
+        <p class="section-label">05 / The gallery</p>
+
+        <p class="archive-eyebrow" id="categoryLabel">PHOTO COLLECTION</p>
+
+        <h1 id="categoryTitle">Loading archive...</h1>
+
+        <p class="archive-description" id="categoryDescription"></p>
+
+        <div class="archive-meta">
+          <span id="albumCount">0 albums</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="archive-content">
+      <div class="container">
+
+        <div class="archive-section-heading">
+          <p class="section-label">THE COLLECTION</p>
+          <h2>Explore the <em>albums.</em></h2>
+        </div>
+
+        <div class="album-grid" id="albumGrid">
+          <p class="loading-message">Loading albums...</p>
+        </div>
+
+        <p class="archive-empty" id="albumEmpty" hidden>
+          Albums for this collection are coming soon.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="archive-footer">
+    <div class="container">
+      <a href="index.html#photos">← Return to the main gallery</a>
+      <p>Nicole Cordoves — The Career Archive</p>
+    </div>
+  </footer>
+
+  <script src="js/photo-category.js" defer></script>
+
+</body>
+</html>

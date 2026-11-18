@@ -1,0 +1,73 @@
+
+[
+  {
+    "id": "public-appearance",
+    "filterCategory": "events",
+    "title": "On the Spotlight",
+    "label": "Public Appearance",
+    "description": "Nicole Cordoves at a public event",
+    "alt": "Nicole Cordoves at a public event",
+    "cover": "images/gallery/nicole-01.jpg",
+    "albums": []
+  },
+  {
+    "id": "hosting",
+    "filterCategory": "hosting",
+    "title": "Taking the Stage",
+    "label": "Hosting",
+    "description": "Nicole Cordoves hosting an event",
+    "alt": "Nicole Cordoves hosting an event",
+    "cover": "images/gallery/nicole-02.jpg",
+    "albums": []
+  },
+  {
+    "id": "pageantry",
+    "filterCategory": "pageantry",
+    "title": "The Pageant Years",
+    "label": "Pageantry",
+    "description": "Nicole Cordoves during a pageant",
+    "alt": "Nicole Cordoves during a pageant",
+    "cover": "images/gallery/nicole-03.jpg",
+    "albums": []
+  },
+  {
+    "id": "television",
+    "filterCategory": "television",
+    "title": "On Screen",
+    "label": "Television",
+    "description": "Nicole Cordoves in a television appearance",
+    "alt": "Nicole Cordoves in a television appearance",
+    "cover": "images/gallery/nicole-07.jpg",
+    "albums": []
+  },
+  {
+    "id": "interviews",
+    "filterCategory": "interviews",
+    "title": "In Conversation",
+    "label": "Interview",
+    "description": "Nicole Cordoves during an interview",
+    "alt": "Nicole Cordoves during an interview",
+    "cover": "images/gallery/nicole-05.jpg",
+    "albums": []
+  },
+  {
+    "id": "events",
+    "filterCategory": "events",
+    "title": "Beyond the Stage",
+    "label": "Events",
+    "description": "Nicole Cordoves at an event",
+    "alt": "Nicole Cordoves at an event",
+    "cover": "images/gallery/nicole-06.jpg",
+    "albums": []
+  },
+  {
+    "id": "editorial",
+    "filterCategory": "editorial",
+    "title": "In The Pages",
+    "label": "Editorial",
+    "description": "Nicole Cordoves at magazine features",
+    "alt": "Nicole Cordoves at magazine features",
+    "cover": "images/gallery/nicole-04.jpg",
+    "albums": []
+  }
+]
