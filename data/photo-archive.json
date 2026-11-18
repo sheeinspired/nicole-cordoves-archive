@@ -17,7 +17,7 @@
     "label": "Hosting",
     "description": "Nicole Cordoves as a host, presenter, and event emcee",
     "alt": "Nicole Cordoves hosting events",
-    "cover": "images/gallery/nicole-02.jpg",
+    "cover": "images/gallery/nicole-host.jpg",
     "albums": [
       {
         "id": "xpeng-grand-launch",
@@ -116,7 +116,25 @@
         "description": "Nicole Cordoves co-hosted the Mr. and Ms. Chinatown Global Winners' Night with Janeena Chan.",
         "cover": "images/gallery/nicole-02.jpg",
         "photos": []
-      }
+      },
+      {
+        "id": "head-and-shoulders",
+        "title": "Head and Shoulders",
+        "date": "2025",
+        "location": "",
+        "description": "Nicole Cordoves co-hosted the Head and Shoulders event ....",
+        "cover": "images/gallery/nicole-hs.jpg",
+        "photos": []
+      },
+       {
+        "id": "bingo-plus-vip-club",
+        "title": "Bingo Plus VIP Club",
+        "date": "2025",
+        "location": "",
+        "description": "Nicole Cordoves co-hosted the Bingo Plus VIP Club event ....",
+        "cover": "images/gallery/nicole-bingo.jpg",
+        "photos": []
+      }     
     ]
   },
   {
