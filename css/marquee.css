@@ -11,8 +11,8 @@
 
 .marquee-track {
   display: flex;
-  flex-wrap: nowrap;
   width: max-content;
+  flex-wrap: nowrap;
   animation: marqueeScroll 65s linear infinite;
   -webkit-animation: marqueeScroll 65s linear infinite;
   will-change: transform;
@@ -28,12 +28,14 @@
 }
 
 .marquee-content span {
+  flex: 0 0 auto;
   font-size: .78rem;
   font-weight: 700;
   letter-spacing: .17em;
 }
 
 .marquee-content b {
+  flex: 0 0 auto;
   color: var(--blush);
 }
 
@@ -50,11 +52,10 @@
 
 @-webkit-keyframes marqueeScroll {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(0);
   }
-
   to {
-    -webkit-transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translateX(-50%);
   }
 }
 
