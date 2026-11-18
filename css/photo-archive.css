@@ -94,12 +94,12 @@
 /* COLLECTION SECTION */
 
 .archive-content {
-  padding: -30px 0 75px;
+  padding: 0 0 75px;
   background: var(--paper);
 }
 
 .archive-section-heading {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .archive-section-heading h2 {
@@ -218,12 +218,12 @@
   text-transform: uppercase;
 }
 
-/* PHOTO GRID */
+/* COMPACT PHOTO GRID */
 
 .album-photo-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 3px;
 }
 
 .album-photo-card {
@@ -236,27 +236,29 @@
   color: var(--wine);
   cursor: pointer;
   text-align: left;
+  aspect-ratio: 1 / 1;
 }
 
 .album-photo-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   background: #ead8d4;
-  transition: transform .4s ease;
+  transition: transform .4s ease, opacity .3s ease;
 }
 
 .album-photo-card:hover img {
-  transform: scale(1.035);
+  transform: scale(1.04);
+  opacity: .88;
 }
 
+/* Hide captions beneath thumbnails.
+   Captions remain available in the lightbox. */
+
 .album-photo-card span {
-  display: block;
-  padding: 12px 2px;
-  color: var(--muted);
-  font-size: .72rem;
-  line-height: 1.6;
+  display: none;
 }
 
 /* LIGHTBOX */
@@ -277,7 +279,7 @@
 }
 
 .photo-lightbox figure {
-  max-width: 900px;
+  max-width: 1000px;
   max-height: 85vh;
   margin: 0;
   text-align: center;
@@ -365,9 +367,13 @@ body.lightbox-open {
 /* RESPONSIVE */
 
 @media (max-width: 850px) {
-  .album-grid,
-  .album-photo-grid {
+  .album-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .album-photo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3px;
   }
 
   .archive-intro,
@@ -376,7 +382,7 @@ body.lightbox-open {
   }
 
   .archive-content {
-    padding: 30px 0 70px;
+    padding: 0 0 70px;
   }
 }
 
@@ -391,25 +397,25 @@ body.lightbox-open {
   }
 
   .archive-content {
-    padding: 25px 0 60px;
+    padding: 0 0 60px;
   }
 
   .archive-section-heading {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
-  .album-grid,
-  .album-photo-grid {
+  .album-grid {
     grid-template-columns: 1fr;
     gap: 22px;
   }
 
-  .archive-album-card > img {
-    aspect-ratio: 5 / 4;
+  .album-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px;
   }
 
-  .album-photo-card img {
-    aspect-ratio: 4 / 5;
+  .archive-album-card > img {
+    aspect-ratio: 5 / 4;
   }
 
   .photo-lightbox {
