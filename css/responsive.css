@@ -51,3 +51,46 @@
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* MOBILE FIX: ABOUT FACTS AND PAGEANT LEADERSHIP */
+
+@media screen and (max-width: 620px) {
+
+  .about-copy {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-facts {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    gap: 18px;
+  }
+
+  .about-fact {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 14px 0;
+    overflow: visible;
+  }
+
+  .about-fact b {
+    display: block;
+    margin-bottom: 6px;
+    font-size: .78rem;
+    line-height: 1.5;
+  }
+
+  .about-fact span {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    font-size: .78rem;
+    line-height: 1.7;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}

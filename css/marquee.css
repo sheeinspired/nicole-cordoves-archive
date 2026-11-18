@@ -12,15 +12,14 @@
 .marquee-track {
   display: flex;
   width: max-content;
-  flex-wrap: nowrap;
-  animation: marqueeScroll 65s linear infinite;
-  -webkit-animation: marqueeScroll 65s linear infinite;
+  animation: marqueeScroll 70s linear infinite;
+  -webkit-animation: marqueeScroll 70s linear infinite;
   will-change: transform;
 }
 
 .marquee-content {
   display: flex;
-  flex: 0 0 auto;
+  flex-shrink: 0;
   align-items: center;
   gap: 32px;
   padding-right: 32px;
@@ -28,23 +27,21 @@
 }
 
 .marquee-content span {
-  flex: 0 0 auto;
   font-size: .78rem;
   font-weight: 700;
   letter-spacing: .17em;
 }
 
 .marquee-content b {
-  flex: 0 0 auto;
   color: var(--blush);
 }
 
-/* SEAMLESS INFINITE LOOP */
-
+/* Infinite scrolling */
 @keyframes marqueeScroll {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -54,26 +51,48 @@
   from {
     -webkit-transform: translateX(0);
   }
+
   to {
     -webkit-transform: translateX(-50%);
   }
 }
 
-/* MOBILE */
-
+/* Tablet */
 @media screen and (max-width: 768px) {
+  .marquee {
+    padding: 14px 0;
+  }
+
   .marquee-track {
-    animation-duration: 100s;
-    -webkit-animation-duration: 100s;
+    animation-duration: 220s !important;
+    -webkit-animation-duration: 220s !important;
   }
 
   .marquee-content {
-    gap: 26px;
-    padding-right: 26px;
+    gap: 24px;
+    padding-right: 24px;
   }
 
   .marquee-content span {
-    font-size: .7rem;
-    letter-spacing: .14em;
+    font-size: .68rem;
+    letter-spacing: .12em;
+  }
+}
+
+/* Small mobile */
+@media screen and (max-width: 480px) {
+  .marquee-track {
+    animation-duration: 260s !important;
+    -webkit-animation-duration: 260s !important;
+  }
+
+  .marquee-content {
+    gap: 20px;
+    padding-right: 20px;
+  }
+
+  .marquee-content span {
+    font-size: .64rem;
+    letter-spacing: .1em;
   }
 }
